@@ -69,6 +69,6 @@ class ThemeServiceProvider extends ServiceProvider
         }
 
         // If need to replace Laravel's view finder with package's theme.finder
-        // $this->app->make('view')->setFinder($this->app->make('theme.finder'));
+        $this->app->make('view')->setFinder($this->app->make('theme.finder'));
     }
 }
